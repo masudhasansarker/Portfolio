@@ -3,24 +3,29 @@ import ProfileImage from '../../assets/masudhasan.png';
 
 const Home = () => {
   return (
-    <div className="text-white flex flex-col-reverse md:flex-row w-full justify-between items-center p-6 md:p-20 gap-10">
-      <div className="md:w-2/4 md:pt-10 text-center md:text-left">
-        <h1 className="text-2xl md:text-4xl font-bold leading-tight tracking-tight mb-4">
-          Hello, I am Masud Hasan Sarker
+    <div className="text-white flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-7xl mx-auto py-15 lg:pt-30  gap-10 px-6 xl:px-0">
+      {/* Text Section */}
+      <div className="w-full md:w-1/2 text-center md:text-left space-y-4 md:space-y-6">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+          Hello, I am <br /> <span className="text-green-300">Masud Hasan Sarker</span>
         </h1>
-        <p className="text-sm md:text-xl tracking-tight max-w-xl mx-auto md:mx-0">
-        I'm a MERN Stack Developer skilled in MongoDB, Express.js, React, and Node.js.
-        I build scalable full-stack web applications with clean, efficient code.
+        <p className="text-sm sm:text-base md:text-lg tracking-tight max-w-xl mx-auto md:mx-0 text-gray-300 text-justify">
+          I'm a MERN Stack Developer skilled in React,NextJS, MongoDB, Express.js, and Node.js.
+          I build scalable full-stack web applications with clean, efficient, and maintainable code.
         </p>
-        <button className="bg-green-300 mt-6 text-black py-2 px-6 text-sm md:text-lg font-semibold rounded-full shadow-md hover:scale-105 hover:opacity-90 transition duration-300">
+        <a
+          href="#Footer"
+          className="bg-green-300 mt-4 inline-block text-black py-2 px-6 sm:py-3 sm:px-8 text-sm sm:text-lg font-semibold rounded-full shadow-md hover:scale-105 hover:opacity-90 transition duration-300"
+        >
           Contact me
-        </button>
+        </a>
       </div>
 
-      <div className="flex justify-center md:justify-end">
+      {/* Image Section */}
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end">
         <img
-          className="w-48 sm:w-64 md:w-80 rounded-xl shadow-lg"
-          src={ProfileImage}
+          className="w-48 sm:w-60 md:w-72 lg:w-80 rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 ease-in-out"
+          src="https://i.ibb.co.com/nM8NNxzN/masudhasan.jpg"
           alt="Masud Hasan"
         />
       </div>
